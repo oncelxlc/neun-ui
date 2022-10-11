@@ -17,7 +17,7 @@
   "files": [
     "dist"
   ],
-  "homepage": "https://oncelxlc.github.io/neun-ui",
+  "homepage": "https://oncelxlc.github.io/neun-u/i",
   "module": "dist/esm/index.js",
   "typings": "dist/esm/index.d.ts",
   "gitHooks": {

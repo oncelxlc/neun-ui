@@ -8,7 +8,7 @@ export default defineConfig({
     mode: 'site',
     // more config: https://d.umijs.org/config
 
-    publicPath: process.env.NODE_ENV === 'production' ? '/neun-ui/' : '/',
+    // publicPath: process.env.NODE_ENV === 'production' ? '/neun-ui/' : '/',
 
     menus: {
         // 需要自定义侧边菜单的路径，没有配置的路径还是会使用自动生成的配置

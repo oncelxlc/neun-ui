@@ -4,21 +4,21 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "master" branch
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    # Triggers the workflow on push or pull request events but only for the "master" branch
+    push:
+        branches: [ "master" ]
+    pull_request:
+        branches: [ "master" ]
 
 jobs:
-  deploy:
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@v3
-      - run: npm install
-      - run: npm run docs:build
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: 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
-          publish_dir: ./docs-dist
+    deploy:
+        runs-on: ubuntu-18.04
+        steps:
+            -   uses: actions/checkout@v3
+            -   run: npm install
+            -   run: npm run docs:build
+            -   name: Deploy
+                uses: peaceiris/actions-gh-pages@v3
+                with:
+                    github_token: ${{ secrets.GITHUB_TOKEN }}
+                    publish_dir: ./docs-dist

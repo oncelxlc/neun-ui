@@ -20,4 +20,16 @@ export default defineConfig({
             },
         ],
     },
+    navs: {
+        "en-US": [
+            {
+                "title": "Components",
+                "path": "/components"
+            },
+            {
+                "title": "GitHub",
+                "path": "https://github.com/oncelxlc/neun-ui"
+            },
+        ],
+    },
 });
